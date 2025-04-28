@@ -1,5 +1,5 @@
 const express = require('express');
-const Job = require('../models/job');
+const Job = require('../models/Job');
 const multer = require('multer');
 const path = require('path');
 
