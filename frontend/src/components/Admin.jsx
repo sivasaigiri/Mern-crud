@@ -7,7 +7,7 @@ function Admin() {
 
   useEffect(() => {
     // Fetch applications from backend
-    axios.get('http://localhost:5000/api/jobs')
+    axios.get("https://mern-crud-2-t79m.onrender.com/api/jobs")
       .then(res => {
         setApplications(res.data);
       })
@@ -37,7 +37,7 @@ function Admin() {
                 <td>{app.email}</td>
                 <td>
                   <a
-                    href={`http://localhost:5000/${app.resume}`}
+                    href={'https://mern-crud-2-t79m.onrender.com/api/jobs/${app.resume}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
