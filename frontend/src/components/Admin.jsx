@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Admin.css'; // Assuming you already created Admin.css
+import './Admin.css';
 import axios from 'axios';
 
 function Admin() {
@@ -37,7 +37,7 @@ function Admin() {
                 <td>{app.email}</td>
                 <td>
                   <a
-                    href={'https://mern-crud-2-t79m.onrender.com/api/jobs/${app.resume}`}
+                    href={`https://mern-crud-2-t79m.onrender.com/${app.resume}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     download
