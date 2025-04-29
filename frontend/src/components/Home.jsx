@@ -25,7 +25,7 @@ const Home = () => {
     data.append('resume', formData.resume);
 
     try {
-      await axios.post('http://localhost:5000/api/jobs', data);
+      await axios.post('https://mern-crud-2-t79m.onrender.com/api/jobs', data);
       alert('Application submitted successfully!');
       setFormData({ name: '', email: '', resume: null });
     } catch (error) {
